@@ -3,7 +3,6 @@
 #include <fstream>
 #include <sstream>
 #include <vector>
-#include <cmath>
 #include "ErrorContext.h"
 #include "PointTests.h"
 
