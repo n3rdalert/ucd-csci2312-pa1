@@ -18,13 +18,14 @@ using namespace std;
 //Set to initialize all new instantiated object variables to zero.
 Point::Point()
 {
-    x = 0;
-    y = 0;
-    z = 0;
+    x = 0.0;
+    y = 0.0;
+    z = 0.0;
+
 }
 
 //Constructor with three paramters passed as the signature.
-//When this constructor is called, it will take three paramters and
+//When this constructor is called, it will take three parameters and
 //set them equal to the Point objects variables x, y, and z.
 Point::Point(double x1, double y1, double z1)
 {
@@ -39,12 +40,21 @@ Point::Point(double x1, double y1, double z1)
 //defined as such by placing "const" at the end. It takes a Point object reference,
 //and returns the value of the distance of a point in proximity to another.
 //
-//'dot' will be name of local-scope variable for this function.
+//'p1' will be name of local-scope variable for this function.
 
-double Point::distanceTo(const Point& dot) const
+double Point::distanceTo(const Point& p1) const
 {
-    return pow(this->getX() - dot.getX(),2) + pow(this->getY() - dot.getY(),2) +
-            pow(this->getZ() - dot.getZ(),2);
+    //Returns the result of the entire calculation.
+    //Use 'this' pointer to point to the class object
+    //being invoked by function call.
+
+    //Results determined by distance formula.
+    return  sqrt (pow(this->getX() - p1.getX(),2) +
+
+                  pow(this->getY() - p1.getY(),2) +
+
+                  pow(this->getZ() - p1.getZ(),2));
+
 }
 
 
