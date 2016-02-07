@@ -91,6 +91,6 @@ of one point in proximity to another.
 
 * _area.cpp_: contains implementation of the function used to calculate area. It's signature is the lengths of the 3
 lines between the points calculated by the distanceTo function inside the Point class. The area is found by using 
-Heron's formula of sqrt((s)*(s-a)*(s-b)*(s-c)). 
+Heron's formula of sqrt((s)(s-a)(s-b)(s-c)). 
 
 ***
