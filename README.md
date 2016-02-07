@@ -32,8 +32,6 @@ C++
 
 
     //Mutator methods (The Set Functions)
-    //One set function for each variable, and will assign the new value of the
-    //variable when it has been calculated.
     void setX(double newX)
     { x = newX; };
 
@@ -46,7 +44,6 @@ C++
 
 
     // Accessor methods (The Get Functions)
-    //One get function for each variable, and will return it's value.
     double getX() const
     {
         return x;
@@ -82,7 +79,7 @@ Compiles successfully on:
 
 ###### Header File: Point.h
 
-* This file contains the declaration of th Point class. Private members are the variables that hold the coordinates 
+* This file contains the declaration of the Point class. Private members are the variables that hold the coordinates 
 of each point. There will be 3 points in total. Public members are the Mutator (set) functions, Accessor 
 (get) functions, and the distanceTo constant member function. The distanceTo function calculates the distance 
 of one point in proximity to another. 

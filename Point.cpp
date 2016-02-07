@@ -10,12 +10,9 @@ using namespace std;
 
 
 #include "Point.h"
-    //must include the .h header file which contains the class definitions
-    //for Point.
 
 
 //Default Constructor
-//Set to initialize all new instantiated object variables to zero.
 Point::Point()
 {
     x = 0.0;
@@ -24,8 +21,7 @@ Point::Point()
 
 }
 
-//Constructor with three paramters passed as the signature.
-//When this constructor is called, it will take three parameters and
+//This constructor will take three parameters and
 //set them equal to the Point objects variables x, y, and z.
 Point::Point(double x1, double y1, double z1)
 {
@@ -36,12 +32,8 @@ Point::Point(double x1, double y1, double z1)
 
 
 //Member function to calculate distance.
-//This member function is constant and therefore must be
-//defined as such by placing "const" at the end. It takes a Point object reference,
-//and returns the value of the distance of a point in proximity to another.
 //
 //'p1' will be name of local-scope variable for this function.
-
 double Point::distanceTo(const Point& p1) const
 {
     //Returns the result of the entire calculation.
